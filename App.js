@@ -132,7 +132,7 @@ handleClick () {  //handleClick should contain props
  });
    return <div className"App" style={divStyle}><TimeTable/></div>;
 }
-
+*/
 	
   render() {
 	  
