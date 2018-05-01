@@ -121,14 +121,14 @@ handleClick () {  //handleClick should contain props
 	times = props.slice(); 
 	let len = times.length;
 	for (let i = 0; i < len; i++) {
-    if (id === times[i].id) {
+    if (props[i].id === times[i].id) {
       times.name = props.name;
 	  times.phone = props.phone; 
     }
   }
 	//React try
  this.setState((state) => {
-	 times:state.filter((t) => t.id === times.id )
+	 times:state.slice((t) => t.id === times.id )
  });
    return <div className"App" style={divStyle}><TimeTable/></div>;
 }
