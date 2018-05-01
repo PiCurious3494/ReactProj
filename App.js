@@ -114,13 +114,13 @@ class App extends Component {
 	const divStyle = {
 	color: '#FF5E66'	
 };
-	
+	/
 handleClick () {  //handleClick should contain props
 	//JS way
 	let times = [];
 	times = props.slice(); 
 	let len = times.length;
-	for (i = 0; i < len; i++) {
+	for (let i = 0; i < len; i++) {
     if (id === times[i].id) {
       times.name = props.name;
 	  times.phone = props.phone; 
@@ -132,7 +132,7 @@ handleClick () {  //handleClick should contain props
  });
    return <div className"App" style={divStyle}><TimeTable/></div>;
 }
-*/
+
 	
   render() {
 	  
