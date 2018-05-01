@@ -116,14 +116,15 @@ class App extends Component {
 };
 	/
 handleClick () {  //handleClick should contain props
-	//JS way
+	//Mostly JS way
 	let times = [];
 	times = props.slice(); 
 	let len = times.length;
 	for (let i = 0; i < len; i++) {
     if (props[i].id === times[i].id) {
       times.name = props.name;
-	  times.phone = props.phone; 
+	  times.phone = props.phone;
+	  //push to array
     }
   }
 	//React try
